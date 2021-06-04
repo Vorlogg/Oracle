@@ -13,11 +13,6 @@ def add_student(id: int, name: str, hostel, room) -> dict:
     exit = ['Зашёл в общежитие', 'Вышел из общежитие']
     date = ['01.09.2018-31.08.2021', '01.09.2019-31.08.2021', '01.09.2020-31.08.2021', '01.09.2017-31.08.2021',
             '01.09.2016-31.08.2021']
-    # room = random.choice(typerooms)
-    if room == 'На 3 человек':
-        liferoom = random.randint(1, 3)
-    else:
-        liferoom = random.randint(1, 2)
     post_data = {
         'Идентификатор': id,
         'ФИО': name,
